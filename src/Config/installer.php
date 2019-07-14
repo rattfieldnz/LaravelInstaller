@@ -143,4 +143,14 @@ return [
     */
     'updaterEnabled' => 'true',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Custom PHP script
+    |--------------------------------------------------------------------------
+    | Path where php script is located, relative to your project's root
+    | folder. e.g. 'custom-scripts/YOURPHPSCRIPT.php.
+    |
+    */
+    'pathToCustomScript' => '',
+
 ];

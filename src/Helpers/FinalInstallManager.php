@@ -17,6 +17,7 @@ class FinalInstallManager
     {
         $outputLog = new BufferedOutput;
 
+        $this->runCustomPHPScript($outputLog);
         $this->generateKey($outputLog);
         $this->publishVendorAssets($outputLog);
 
@@ -54,6 +55,21 @@ class FinalInstallManager
         try{
             if (config('installer.final.publish')){
                 Artisan::call('vendor:publish', ['--all' => true], $outputLog);
+            }
+        }
+        catch(Exception $e){
+            return static::response($e->getMessage(), $outputLog);
+        }
+
+        return $outputLog;
+    }
+
+    private static function runCustomPHPScript(BufferedOutput $outputLog)
+    {
+        try{
+            if(config('installer.pathToCustomScript')){
+                $path = config('installer.pathToCustomScript');
+                Artisan::call('run-php-file', ['php_file' => $path], $outputLog);
             }
         }
         catch(Exception $e){
