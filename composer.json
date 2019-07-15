@@ -28,7 +28,10 @@
         "laravel": {
             "providers": [
                 "RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "InstallerHelper": "RachidLaasri\\LaravelInstaller\\Helpers\\InstallerHelper"
+            }
         }
     },
     "config": {
