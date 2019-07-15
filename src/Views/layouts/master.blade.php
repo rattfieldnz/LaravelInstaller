@@ -25,11 +25,11 @@
                 </div>
                 <ul class="step">
                     <li class="step__divider"></li>
-                    <li class="step__item {{ isActive('LaravelInstaller::final') }}">
+                    <li class="step__item {{ InstallerHelper::isActive('LaravelInstaller::final') }}">
                         <i class="step__icon fa fa-server" aria-hidden="true"></i>
                     </li>
                     <li class="step__divider"></li>
-                    <li class="step__item {{ InstallerHelper::isActive('LaravelInstaller::environment')}} {{ isActive('LaravelInstaller::environmentWizard')}} {{ isActive('LaravelInstaller::environmentClassic')}}">
+                    <li class="step__item {{ InstallerHelper::isActive('LaravelInstaller::environment')}} {{ InstallerHelper::isActive('LaravelInstaller::environmentWizard')}} {{ InstallerHelper::isActive('LaravelInstaller::environmentClassic')}}">
                         @if(Request::is('install/environment') || Request::is('install/environment/wizard') || Request::is('install/environment/classic') )
                             <a href="{{ route('LaravelInstaller::environment') }}">
                                 <i class="step__icon fa fa-cog" aria-hidden="true"></i>
