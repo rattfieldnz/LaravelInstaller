@@ -1,5 +1,5 @@
 {
-    "name": "rachidlaasri/laravel-installer",
+    "name": "rattfieldnz/laravel-installer",
     "description": "Laravel web installer",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,10 @@
         {
             "name": "Jeremy Kenedy",
             "email": "jeremykenedy@gmail.com"
+        },
+        {
+            "name": "Robert Attfield",
+            "email": "emailme@robertattfield.com"
         }
     ],
     "require": {
@@ -18,10 +22,7 @@
     "autoload": {
         "psr-4": {
             "RachidLaasri\\LaravelInstaller\\": "src/"
-        },
-        "files": [
-            "src/Helpers/functions.php"
-        ]
+        }
     },
     "extra": {
         "laravel": {
