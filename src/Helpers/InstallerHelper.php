@@ -1,11 +1,14 @@
 <?php
 
-
 namespace RachidLaasri\LaravelInstaller\Helpers;
 
 use Illuminate\Support\Facades\Route as Route;
 use Illuminate\Support\Facades\Url as Url;
 
+/**
+ * Class InstallerHelper
+ * @package RachidLaasri\LaravelInstaller\Helpers
+ */
 class InstallerHelper
 {
     /**
