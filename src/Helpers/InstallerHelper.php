@@ -3,6 +3,8 @@
 
 namespace RachidLaasri\LaravelInstaller\Helpers;
 
+use Illuminate\Routing\Router as Route;
+use Illuminate\Routing\UrlGenerator as Url;
 
 class InstallerHelper
 {
