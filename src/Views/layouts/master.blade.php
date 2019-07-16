@@ -1,6 +1,3 @@
-@php
-
-@endphp
 <!DOCTYPE html>
 <html>
     <head>
